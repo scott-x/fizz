@@ -34,7 +34,7 @@ types:
 
 ```cpp
 #include <iostream>
-#include "t/time.hpp"
+#include "t/time.h"
 
 int main(int argc, char const *argv[])
 {

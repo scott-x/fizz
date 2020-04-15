@@ -1,4 +1,4 @@
-#include "time.hpp"
+#include "time.h"
 
 //https://linux.die.net/man/3/sleep
 void fizz::t::_sleep(unsigned int second){

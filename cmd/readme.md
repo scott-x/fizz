@@ -1,9 +1,6 @@
-/*
-* @Author: scottxiong
-* @Date:   2020-04-15 22:02:45
-* @Last Modified by:   scottxiong
-* @Last Modified time: 2020-04-15 23:22:25
-*/
+# cmd
+
+```cpp
 #include <iostream>
 #include "cmd/cmd.h"
 
@@ -18,3 +15,4 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+```
