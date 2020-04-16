@@ -3,7 +3,7 @@
 #include <algorithm>
 
 void fizz::str::firstLetterToUpper(string str){
-
+	
 }
 string fizz::str::getWord(string str, int index){
 	return "";
