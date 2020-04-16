@@ -5,7 +5,7 @@
 namespace fizz {
 	namespace str {
 		using namespace std;
-		void firstLetterToUpper(string str);
+		std::string firstLetterToUpper(string str);
 		string getWord(string str, int index);
 		bool isLastArrItem(string str[], int index);
 		string getContentBetween(string A, string B);

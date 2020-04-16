@@ -3,10 +3,10 @@
 #include <algorithm>
 #include <iostream>
 
-void fizz::str::firstLetterToUpper(string str){
+std::string fizz::str::firstLetterToUpper(string str){
 	bool lastIsSpace;
-	std::string another = toLower(str) ;
-	for(auto c : another) {
+	std::string another;
+	for(auto c : toLower(str) ) {
 		if (c==32) {
 			lastIsSpace = true;
 			// continue;
@@ -15,16 +15,21 @@ void fizz::str::firstLetterToUpper(string str){
 			c -=32;
 			lastIsSpace = false;
 		}
-		std::cout << c << std::endl;
+		//https://www.cnblogs.com/aminxu/p/4686320.html
+		another.append(1,c);
 	}
-	std::cout <<"another:" << another<< std::endl;
+	// std::cout <<"another:" << another<< std::endl;
+	return another;
 }
+
 std::string fizz::str::getWord(string str, int index){
 	return "";
 }
+
 bool fizz::str::isLastArrItem(string str[], int index){
 	return true;
 }
+
 std::string fizz::str::getContentBetween(string A, string B){
 	return "";
 }
