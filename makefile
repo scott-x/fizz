@@ -1,4 +1,4 @@
-all: time.o cmd.o str.o reg.o dylib
+all: time.o cmd.o str.o reg.o dylib build
 time.o:
 	g++ -c t/time.cpp -o time.o
 cmd.o:
@@ -6,7 +6,7 @@ cmd.o:
 reg.o:
 	g++ -c reg/reg.cpp -o reg.o	
 str.o:
-	g++ -c str/str.cpp -o str.o	
+	clang++ -std=c++11 -c str/str.cpp -o str.o	
 dylib: time.o cmd.o reg.o str.o
 	g++ time.o cmd.o reg.o str.o -dynamiclib -o libtest.dylib	
 build:

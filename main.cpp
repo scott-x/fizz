@@ -2,19 +2,13 @@
 * @Author: scottxiong
 * @Date:   2020-04-15 22:02:45
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2020-04-15 23:22:25
+* @Last Modified time: 2020-04-16 17:27:45
 */
-#include <xlnt/xlnt.hpp>
+#include "str/str.h"
 
-int main()
+int main(int argc, char const *argv[])
 {
-    xlnt::workbook wb;
-    xlnt::worksheet ws = wb.active_sheet();
-    ws.cell("A1").value(5);
-    ws.cell("B2").value("string data");
-    ws.cell("C3").formula("=RAND()");
-    ws.merge_cells("C3:C4");
-    ws.freeze_panes("B2");
-    wb.save("example.xlsx");
-    return 0;
+	std::string s = " hello WoDrf";
+	fizz::str::firstLetterToUpper(s);
+	return 0;
 }
