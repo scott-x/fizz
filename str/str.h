@@ -2,6 +2,8 @@
 #define __STR_H__ 
 
 #include <string>
+#include <vector>
+
 namespace fizz {
 	namespace str {
 		using namespace std;
