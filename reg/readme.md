@@ -3,15 +3,15 @@
 ### example
 ```cpp
 #include <iostream>
-#include "reg/reg.h"
-
+#include "fizz.h"
+using namespace std;
 int main(int argc, char const *argv[])
 {
-	std::string s = "hello world";
-	if (fizz::reg::matched(s,std::regex("^h.*d$"))){
-		std::cout << "matched" << std::endl; 
+	bool res = fizz::reg::matched("u200","^[0-9].*");
+	if (res){
+		cout << "matched"<<endl;
 	}else{
-		std::cout << "not matched" << std::endl;
+		cout << "not matched"<<endl;
 	}
 	return 0;
 }

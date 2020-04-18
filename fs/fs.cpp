@@ -1,69 +1,80 @@
 #include "fs.h"
 
-fizz:fs::fs(){}
-fizz:fs::~fs(){}
-bool fizz::fs::isExist(std::string filepath){
+fizz::fs::fs(){}
+fizz::fs::~fs(){}
+
+bool fizz::fs::isExist(string filepath){
+	return true;
+}
+bool fizz::fs::isDir(string filepath){
+	return true;
+}
+bool fizz::fs::isFile(string filepath){
+	return true;
+}
+void fizz::fs::mkdir(string filepath){
 
 }
-bool fizz::fs::isDir(std::string filepath){
+void fizz::fs::mkdirp(string filepath){
 
 }
-bool fizz::fs::isFile(std::string filepath){
+string fizz::fs::readFile(string filepath){
+	return "";
+}
+void fizz::fs::writeFile(string filepath, string content){
 
 }
-void fizz::fs::mkdir(std::string filepath){
-
-}
-void fizz::fs::mkdirp(std::string filepath){
-
-}
-std::string fizz::fs::readFile(std::string filepath){
-
-}
-void fizz::fs::writeFile(std::string filepath, std::string content){
-
-}
-std::string fizz::fs::tab(int n){
+string fizz::fs::tab(int n){
+	return "";
 	
 }
-string[] fizz::fs::list(std::string folder){
+string* fizz::fs::list(string folder){
+	string *s = new string[2];
+	s[0] ="hello";
+	s[1] ="world";
+	return s;
+}
+string* fizz::fs::listOnlyFile(string folder){
+	string *s = new string[2];
+	s[0] ="hello";
+	s[1] ="world";
+	return s;
+}
+string* fizz::fs::listOnlyFolder(string folder){
+	string *s = new string[2];
+	s[0] ="hello";
+	s[1] ="world";
+	return s;
+}
+void fizz::fs::rename(string _old, string _new){
 
 }
-string[] fizz::fs::listOnlyFile(std::string folder){
+void fizz::fs::copyFile(string from, string to){
 
 }
-string[] fizz::fs::listOnlyFolder(std::string folder){
+void fizz::fs::copyFolder(string from, string to){
 
 }
-void fizz::fs::rename(std::string _old, std::string _new){
+void fizz::fs::copyAndReplace(string from, string to,map<string,string> m){
 
 }
-void fizz::fs::copyFile(std::string from, std::string to){
+void fizz::fs::readAndReplace(string filename, map<string,string> m){
 
 }
-void fizz::fs::copyFolder(std::string from, std::string to){
+void fizz::fs::createFile(string file){
 
 }
-void fizz::fs::copyAndReplace(std::string from, std::string to,map<string,string> m){
+string getEnv(string){
+	return "";
+}
+void fizz::fs::removeFile(string filename){
 
 }
-void fizz::fs::readAndReplace(std::string filename, map<string,string> m){
+void fizz::fs::removeFolder(string folder){
 
 }
-void fizz::fs::createFile(std::string file){
-
-}
-sdt::string getEnv(std::string){
-
-}
-void fizz::fs::removeFile(std::string filename){
-
-}
-void fizz::fs::removeFolder(std::string folder){
-
-}
-std::string fizz::fs::getDir(){
-	
+string fizz::fs::getDir(){
+	return "";
 }
 void fizz::fs::insert(Insert *){
 

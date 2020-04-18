@@ -4,7 +4,7 @@
 namespace fizz
 {
 	namespace cl {
-		enum color { Green, Yellow, Blue, Magenta, Cyan, Red }
+		enum color { Green, Yellow, Blue, Magenta, Cyan, Red };
 	}
 }
 #endif

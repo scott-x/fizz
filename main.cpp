@@ -1,10 +1,13 @@
 #include <iostream>
-#include "str/str.h"
-
+#include "fizz.h"
+using namespace std;
 int main(int argc, char const *argv[])
 {
-	for (auto x: fizz::str:split("hello world I am scott"," ")){
-		std::cout << x << std::endl;
-	}	
+	bool res = fizz::reg::matched("u200","^[0-9].*");
+	if (res){
+		cout << "matched"<<endl;
+	}else{
+		cout << "not matched"<<endl;
+	}
 	return 0;
 }

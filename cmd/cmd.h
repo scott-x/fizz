@@ -12,13 +12,13 @@ namespace fizz {
 		cmd();
 		~cmd();
 	public:
-		void Green(std::string);
-		void Yellow(std::string);
-		void Blue(std::string);
-		void Magenta(std::string);
-		void Red(std::string);
-		void Cyan(std::string);
-		std::string addQuestion(std::string tips1, std::string tips2, std::string re);
+		static void Green(std::string);
+		static void Yellow(std::string);
+		static void Blue(std::string);
+		static void Magenta(std::string);
+		static void Red(std::string);
+		static void Cyan(std::string);
+		static std::string addQuestion(std::string tips1, std::string tips2, std::string re);
 	};//cmd
 }//fizz
 

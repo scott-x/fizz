@@ -1,21 +1,19 @@
 #ifndef __SQL_H__
 #define __SQL_H__ 
 
-struct Field {
+typedef struct {
 	std::string name;
 	std::string type;
-}
+}Field;
 
 struct Table {
 	std::string name;
-	Field[] fields;
-}
-
-typedef Tables Table[];
+	Field *fields;
+};
 
 namespace fizz {
 	namespace parse {
-		Tables getTables(std::string sqlfile);
+		Table* getTables(std::string sqlfile);
 	}
 }
 
