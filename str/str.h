@@ -13,6 +13,7 @@ namespace fizz {
 		string getContentBetween(string A, string B);
 		string toUpper(string str);
 		string toLower(string str);
+		vector<string> split(string src,string separator);
 	}
 }
 #endif

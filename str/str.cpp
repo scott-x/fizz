@@ -3,9 +3,9 @@
 #include <algorithm>
 #include <iostream>
 
-std::string fizz::str::firstLetterToUpper(string str){
+fizz::str::firstLetterToUpper(string str){
 	bool lastIsSpace;
-	std::string another;
+	another;
 	for(auto c : toLower(str) ) {
 		if (c==32) {
 			lastIsSpace = true;
@@ -26,7 +26,7 @@ std::string fizz::str::firstLetterToUpper(string str){
 	return another;
 }
 
-std::string fizz::str::getWord(string str, int index){
+fizz::str::getWord(string str, int index){
 	return "";
 }
 
@@ -34,16 +34,21 @@ bool fizz::str::isLastArrItem(string str[], int index){
 	return true;
 }
 
-std::string fizz::str::getContentBetween(string A, string B){
+fizz::str::getContentBetween(string A, string B){
 	return "";
 }
 
-std::string fizz::str::toUpper(string str){
+fizz::str::toUpper(string str){
 	transform(str.begin(),str.end(),str.begin(),::toupper);
 	return str;
 }
 
-std::string fizz::str::toLower(string str){
+fizz::str::toLower(string str){
 	transform(str.begin(),str.end(),str.begin(),::tolower);
 	return str;
+}
+
+vector<string> split(strings src, string separator){
+	vector<string> v;
+	
 }
