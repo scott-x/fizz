@@ -1,6 +1,6 @@
 
 cmd:
-	g++ test/cmd.cpp -lfizz -o test_cmd
+	g++ example/cmd.cpp -lfizz -o test_cmd
 
 clean:
 	rm -rf test_*

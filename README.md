@@ -14,4 +14,4 @@ make
 cd ..
 go run install.go # make sure golang were installed
 ```
-Then you can use this lib, [more detail](https://github.com/scott-x/fizz/wiki)
+Then you can use this lib, [document detail](https://github.com/scott-x/fizz/wiki)
