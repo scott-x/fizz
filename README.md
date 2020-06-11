@@ -8,10 +8,10 @@ A C++ tools
 ```
 # clone
 git clone https://github.com/scott-x/fizz.git
-# move into this repo, then
+# first move into this repo, then
 cd src
 make
 cd ..
 go run install.go # make sure golang were installed
 ```
-Then you can use this lib, [document detail](https://github.com/scott-x/fizz/wiki)
+Then you can use this lib, [document detail](https://github.com/scott-x/fizz/wiki/cmd)

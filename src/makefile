@@ -14,8 +14,8 @@ time.o:
 	g++ -c t/time.cpp -o $@
 dylib: 
 	g++ *.o -dynamiclib -o libfizz.dylib
-build:
-	clang++ -std=c++11 test.cpp -L ./ -ltest	
+#build:
+#	clang++ -std=c++11 test.cpp -L ./ -ltest	
 clean:
 	rm -rf *.o	
 	rm -rf *.out

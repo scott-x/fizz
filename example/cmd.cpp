@@ -13,6 +13,6 @@ int main(int argc, char const *argv[])
 	
 	string result = fizz::cmd::addQuestion("please input a string starts with a and ends with b:","please input correct string:","^a.*b$");
 	
-	cout << "the result is : " << result << std::endl;
+	cout << "the result is : " << result << endl;
 	return 0;
 }
